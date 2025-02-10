@@ -15,7 +15,7 @@ show_scatter = st.checkbox("Show Scatter Plot")
 # If the histogram checkbox is checked
 if show_histogram:
     st.write(
-        "Creación de un histograma para el conjunto de datos de anuncios de venta de coches")
+        "Creating a histogram for the car sales advertisements dataset")
 
     # Create and display histogram
     fig_histogram = px.histogram(car_data, x="odometer")
@@ -24,7 +24,7 @@ if show_histogram:
 # If the scatter plot checkbox is checked
 if show_scatter:
     st.write(
-        "Creación de un gráfico de dispersión distancia recorrida vs precio de los coches")
+        "Creating a scatter plot of distance traveled vs price of cars")
 
     # Create and display scatter plot
     fig_scatter = px.scatter(car_data, x="odometer", y="price")
